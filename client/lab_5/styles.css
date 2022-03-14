@@ -10,6 +10,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   background-color: darkslategray;
+  color: #FFFFFF;
 }
 
 /* Page Layout */
@@ -23,5 +24,56 @@ body {
 }
 .container {
   max-width: 960px;
+  height: 800px;
   margin-top: 25px;
+
+}
+
+.header {
+  max-width: 400px;
+  background-color: gold;
+  margin-top: 20px;
+  display: flex;
+  color: black;
+}
+
+.food-form {
+  background-color: #F6F7F8;
+  color: black;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 25%;
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+
+.form-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type='text'] { 
+  background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-row input[type='radio'] {
+  margin-top: 2px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: green;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
 }

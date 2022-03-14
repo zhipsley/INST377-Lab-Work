@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zachary Hipsley's Lab 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="container">
+        <h1 class="header">Zachary Hipsley's Lab 5</h1>
+        <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" method="get" class="food-form">
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text"/>
+            </div>
+            <div class="form-row">
+                <label for="food-preference">Food Preference</label>
+                <input id="food-preference" name="food-preference" type="text"/>
+            </div>
+            <fieldset class="form-row">       
+                <legend>Veggie or Vegan?</legend>
+                <input id="food-yes" name="food-type" type="radio" value="Yes"/>
+                <label for="food-yes" class="food-label">Yes</label>
+                <input id="food-no" name="food-type" type="radio" value="No"/>
+                <label for="food-no" class="food-label">No</label>
+            </fieldset>
+            <div class="form-row">
+                <button>Submit</button>
+            </div>
+        </form>
+      </div>
+  </body>
+</html>
